@@ -5,6 +5,7 @@ def get_first_name_of_season_winner(data, season)
   data.each do |season_number, information| #information is an array
     if season_number == season
       information["status"].each do |stat, outcome|
+        binding.pry
         if outcome == "Winner"
           first_name = information.fetch("name")
         end
