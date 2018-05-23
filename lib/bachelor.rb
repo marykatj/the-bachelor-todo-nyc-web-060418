@@ -69,7 +69,6 @@ def get_average_age_for_season(data, season)
             end
             sum = sum + age.to_i
           end
-          average = sum/2
         end
-    average
+    average = sum/2
 end
