@@ -7,13 +7,13 @@ def get_first_name_of_season_winner(data, season)
       information.each do |info_hash|
         info_hash.each do |attribute, outcome|
           if outcome == "Winner"
-            first_name = info_hash["name"].first
+            first_name = info_hash["name"].split.first
           end
         end
       end
     end
   end
-  first_name
+  first_name.join
 end
 
 def get_contestant_name(data, occupation)
