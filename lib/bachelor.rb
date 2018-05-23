@@ -7,7 +7,6 @@ def get_first_name_of_season_winner(data, season)
       information["status"].each do |stat, outcome|
         if outcome == "Winner"
           first_name = information.fetch("name")
-          binding.pry
         end
       end
     end
