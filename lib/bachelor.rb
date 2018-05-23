@@ -66,8 +66,8 @@ def get_average_age_for_season(data, season)
       if season_number == season
         information.each do |info_hash|
               age = info_hash["age"]
-              sum = sum + age.to_i
             end
+            sum = sum + age.to_i
             average = sum/2
             binding.pry
           end
