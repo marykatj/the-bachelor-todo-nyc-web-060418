@@ -8,7 +8,6 @@ def get_first_name_of_season_winner(data, season)
         info_hash.each do |attribute, outcome|
           if outcome == "Winner"
             first_name = info_hash["name"].split(" ").first
-            binding.pry
           end
         end
       end
