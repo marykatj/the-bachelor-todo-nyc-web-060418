@@ -4,10 +4,11 @@ def get_first_name_of_season_winner(data, season)
   first_name = ""
   data.each do |season_number, information| #information is an array
     if season_number == season
-      information.each do |outcome|
-        binding.pry
-        if outcome == "Winner"
-          first_name = information.fetch("name")
+      information.each do |info_hash|
+        info_hash.each do |attribute, outcome|
+          if outcome == "Winner"
+            first_name = information.fetch("name")
+          end
         end
       end
     end
