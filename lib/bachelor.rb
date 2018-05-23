@@ -7,7 +7,7 @@ def get_first_name_of_season_winner(data, season)
       information.each do |info_hash|
         info_hash.each do |attribute, outcome|
           if outcome == "Winner"
-            first_name = attribute.to_a.fetch("name")
+            first_name = info_hash.to_a.fetch("name")
             binding.pry
           end
         end
