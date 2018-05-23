@@ -25,7 +25,6 @@ def get_contestant_name(data, occupation)
             woman_name = info_hash["name"]
           end
         end
-      end
     end
   end
   woman_name
